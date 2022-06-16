@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <springProfile name="!dev">
+<!--        uncomment to enable fluentd (when there's a running docker instance)           -->
+<!--        <springProperty scope="context" name="fluentHost" source="fluentd.host" defaultValue="localhost"/>-->
+<!--        <springProperty scope="context" name="fluentPort" source="fluentd.port" defaultValue="24224"/>-->
+<!--        <appender name="FLUENT" class="ch.qos.logback.more.appenders.DataFluentAppender">-->
+<!--            &lt;!&ndash; Check tag and label fluentd info: https://docs.fluentd.org/configuration/config-file&ndash;&gt;-->
+<!--            <tag>ct.projects.springbootchallenge.access</tag>-->
+<!--            <label>normal</label>-->
+<!--            <remoteHost>${fluentHost}</remoteHost>-->
+<!--            <port>${fluentPort}</port>-->
+<!--        </appender>-->
+
+<!--        <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">-->
+<!--            <layout class="ch.qos.logback.classic.PatternLayout">-->
+<!--                <Pattern>-->
+<!--                    %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n-->
+<!--                </Pattern>-->
+<!--            </layout>-->
+<!--        </appender>-->
+
+<!--        <root level="info">-->
+<!--            <appender-ref ref="FLUENT" />-->
+<!--        </root>-->
+    </springProfile>
+</configuration>
