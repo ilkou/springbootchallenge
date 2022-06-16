@@ -10,3 +10,5 @@
 ## Tests Coverage (intellij)
 
 ![alt text](https://github.com/ilkou/springbootchallenge/blob/main/images/coverage.png "TESTS COVERAGE")
+
+### [Swagger endpoint](http://localhost:9090/swagger-ui/index.html)
